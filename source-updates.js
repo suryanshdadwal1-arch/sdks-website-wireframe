@@ -1,0 +1,36 @@
+/* Reconciled against completed Drive discovery, Client Requirement Form rows 5–26,
+   and the principal's Website draft. No private targets or coordinator contacts. */
+pages.home.intro='A Kinder, Brighter World\nBegins Here.';
+pages.home.desc='At SDKS Sri Sri Academy, learning begins with curiosity and grows through care, practice and shared experiences.';
+pages.home.note='Design 3 wording selected by the user. Supporting copy adapted from the principal’s Mission. Media remains a placeholder until approved assets are supplied.';
+pages.home.sections[1].text='Our campus in Patiala is taking shape for the April 2027 session, with classrooms, a play and activity room for younger children, a multipurpose hall and an infirmary planned for opening.';
+pages.home.sections[1].note='Completed discovery rows 10 and 19. Launch provision supplied by school; current photographs and readiness update still needed.';
+pages.home.sections[2].text='The school’s approach gives children room to learn at their own pace and practise compassion and cooperation in everyday school life.';
+pages.about.desc='SDKS Sri Sri Academy is an initiative of Sanatan Dharam Kumar Sabha, in association with Sri Sri Ravi Shankar Vidya Mandir (SSRVM), the education arm of Art of Living.';
+pages.about.note='Association supplied in completed discovery row 7. Principal header says “To be affiliated to CBSE”; do not describe the school as already affiliated.';
+pages.about.sections[0].text='Our approach brings together classroom learning, practical experiences and values. We want children to feel a sense of belonging and learn to take responsibility for themselves and others.';
+pages.about.sections.splice(1,0,{type:'prose',title:'Board and academic session',text:'To be affiliated to CBSE. The first academic session is planned for April 2027, with classes from Nursery to Class V.',note:'Principal header and completed discovery rows 10–11. Nursery / Pre-Nursery discrepancy remains for academic confirmation.'});
+pages.learning.sections.at(-1).items[2][1]='The school plans to expand up to Class XII. The phasing of additional classes will be announced separately.';
+pages.primary.sections[2].items[2][1]='Expansion up to Class XII is planned. The opening schedule for additional classes is yet to be confirmed.';
+pages.campus.desc='The campus behind SDKS Bhawan on Rajpura Road is under construction for the planned April 2027 session.';
+pages.campus.sections[0]={type:'cards',title:'Planned for opening',items:[['Classrooms','One classroom for each class, with a TV screen for teaching.'],['Early-years activity room','A play and activity room for pre-primary children.'],['Multipurpose hall','A 250-seat hall and a separate assembly area.'],['Infirmary & transport','An infirmary and school transport are included in the launch plan.']],note:'Completed discovery rows 19 and 21. School-supplied launch plan; verify readiness before launch. Routes and supervision arrangements not supplied.'};
+pages.campus.sections.splice(1,0,{type:'cards',title:'Further campus plans',items:[['Laboratories','Science, mathematics and separate computer labs are planned.'],['Tinkering lab','Planned to introduce students to robotics.'],['Arts, music & dance','Separate rooms are planned for arts and crafts, music and dance.']],note:'Completed discovery rows 20–23. These plans include provision for future classes; phasing and launch readiness remain to confirm.'});
+pages.sports.sections[0]={type:'list',title:'Sports facilities in the plan',items:[['Athletics & field sports','A running track and a ground for hockey and cricket.'],['Basketball','Two outdoor courts and one indoor court.'],['Badminton & table tennis','Three indoor badminton courts and four to five table tennis tables.']],note:'Completed discovery row 22. Track is entered as “400mm”; principal draft says 400m. Do not publish a measurement until corrected. Coaching, ages and phasing remain open.'};
+pages.sports.sections[1].text='Yoga and meditation are part of the school’s planned approach to wellbeing, following the SSRVM pedagogy of Shraddha.';
+pages.sports.sections[1].note='Completed discovery row 23. Routine and age-specific details still to be supplied.';
+pages.admissions.desc='The first academic session is planned for April 2027, for Nursery to Class V.';
+pages.admissions.sections[0].text='Admissions are scheduled to open on 1 December 2026. You can contact the school with questions in the meantime.';
+pages.admissions.sections[0].note='Completed discovery row 26, verified 14 September 2026; admissions are not open at this review date. Reconfirm if the schedule changes.';
+pages.admissions.sections.find(s=>s.type==='faq').items[0][1]='First session: April 2027. Nursery to Class V. Age criteria and exact early-years class labels will be added once confirmed.';
+pages.admissions.sections.find(s=>s.type==='faq').items[2][1]='School transport is planned. Routes, pickup points, supervision and charges will be shared once finalised.';
+pages.fees.desc='The final class-wise fee schedule, inclusions and payment details will be shared by the school.';
+pages.fees.note='Completed discovery row 18 provides an indicative monthly range. A final publishable fee schedule and breakdown have not been supplied; do not describe fees as wholly missing.';
+pages.contact.note='Completed discovery row 17 supplies the visitor address and Maps link. PIN 147001 supplied in client billing confirmation. Coordinator’s personal number is not assumed to be the public school helpline.';
+pages.contact.sections[0].note=pages.contact.note;
+pages.admissions.note='Completed discovery rows 10, 11 and 26 supply session, classes and opening date. Final admission steps and eligibility remain to be supplied.';
+pages.admissions.sections.find(s=>s.type==='faq').note='Session and transport availability received. Eligibility, routes and final fees remain open.';
+pages.campus.note='Completed discovery rows 17 and 19–23; named launch facilities separated from longer-term campus plans.';
+pages.campus.sections.find(s=>s.type==='faq').items[2][1]='Behind SDKS Bhawan, Rajpura Road, Patiala. School transport is planned; routes and pickup points are still to be confirmed.';
+pages.learning.sections.at(-1).note='Completed discovery confirms expansion up to XII; dates/phasing and detailed assessment/communication policy remain to confirm.';
+pages.disclosure.sections[0].rows=[['School name','SDKS Sri Sri Academy, Patiala'],['Board wording','To be affiliated to CBSE'],['Affiliation / school code','Not supplied'],['Campus address','Behind SDKS Bhawan, Rajpura Road, Patiala, Punjab 147001'],['Public phone / email','To be supplied'],['Principal & qualification','To be supplied']];
+pages.disclosure.sections[0].note='Name and address from completed discovery; board wording from principal draft. No affiliation number supplied.';
