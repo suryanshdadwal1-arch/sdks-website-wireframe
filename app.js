@@ -10,10 +10,10 @@ function renderSection(s,i){
  const head=`<div class="section-heading"><span class="section-number">${String(i+2).padStart(2,'0')}</span><h2>${esc(s.title)}</h2></div>`;
  const body=esc(s.text || ''); let content='';
  if(s.type==='split') content=`<div class="split ${s.reverse?'reverse':''}"><div>${head}<p>${body}</p>${s.link?link(s.link,s.label):''}</div>${media(s.image)}</div>`;
- else if(s.type==='cards') content=`${head}<div class="cards count-${s.items.length}">${s.items.map(([t,d,l])=>`<article><h3>${esc(t)}</h3><p>${esc(d)}</p>${l?link(l,'Explore '+t):''}</article>`).join('')}</div>`;
+ else if(s.type==='cards') content=`${head}<div class="cards count-${s.items.length}">${s.items.map(([t,d,l,label])=>`<article><h3>${esc(t)}</h3><p>${esc(d)}</p>${l?link(l,label||'About '+t):''}</article>`).join('')}</div>`;
  else if(s.type==='pillars') content=`<h2 class="sr-only">${esc(s.title)}</h2><div class="pillars">${s.items.map(([t,d,l])=>`<article><h3>${link(l,t)}</h3><p>${esc(d)}</p></article>`).join('')}</div>`;
  else if(s.type==='feature') content=`<div class="feature-layout"><div>${head}<p>${body}</p>${s.link?link(s.link,s.label,'button'):''}</div>${media(s.image)}</div>`;
- else if(s.type==='stories') content=`<div class="stories-layout"><div>${head}<p>${body}</p>${link('school-life','Discover school life')}</div><div class="story-images">${s.items.map(([t,d,l])=>`<article>${media(t,true)}<h3>${link(l,t)}</h3><p>${esc(d)}</p></article>`).join('')}</div></div>`;
+ else if(s.type==='stories') content=`<div class="stories-layout"><div>${head}<p>${body}</p>${link('school-life',s.label||'See school life')}</div><div class="story-images">${s.items.map(([t,d,l])=>`<article>${media(t,true)}<h3>${link(l,t)}</h3><p>${esc(d)}</p></article>`).join('')}</div></div>`;
  else if(s.type==='prose') content=`<div class="prose">${head}<p>${body}</p></div>`;
  else if(s.type==='notice') content=`<div class="notice"><strong>${esc(s.title)}</strong><p>${body}</p></div>`;
  else if(s.type==='cta') content=`<div class="cta"><div><h2>${esc(s.title)}</h2>${body?`<p>${body}</p>`:''}</div><div class="actions">${link(s.link,s.label,'button')}${s.secondary?link(s.secondary,s.secondaryLabel):''}</div></div>`;
