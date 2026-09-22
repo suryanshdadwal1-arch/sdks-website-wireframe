@@ -4,6 +4,7 @@ pages.campus.sections[0].title='Spaces for Your Child’s School Day';
 pages.campus.sections[0].items=[['Classrooms','The opening plans include a classroom for each class, with a screen to support teaching.'],['Early-years play and activity room','A dedicated space for younger children’s play and activities is planned for opening.'],['Gathering spaces','A 250-seat multipurpose hall and a separate assembly area are planned for children to come together.'],['Medical care','An infirmary is included in the opening campus plan.']];
 pages.campus.sections[1].title='As the School Grows';
 pages.campus.sections[1].items=[['Laboratories','Further plans include science, mathematics and computer laboratories. Opening schedules are yet to be confirmed.'],['Robotics and tinkering','A tinkering lab is planned to introduce students to robotics. Its opening schedule is yet to be confirmed.'],['Art, music and dance','Separate rooms for art, music and dance are part of the further campus plans. Opening schedules are yet to be confirmed.']];
+pages.campus.sections[1].items.push(['Wellness & Yoga Centre','A dedicated centre for yoga and wellbeing is planned. Its opening schedule is yet to be confirmed.']);
 const campusProgress=pages.campus.sections.find(s=>s.title==='Campus progress');
 campusProgress.parentText='The campus is currently under construction for the planned April 2027 session.';
 const campusFaq=pages.campus.sections.find(s=>s.type==='faq');
