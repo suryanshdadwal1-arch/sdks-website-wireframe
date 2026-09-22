@@ -6,4 +6,6 @@ Open `index.html` through any static web server or GitHub Pages. The review fram
 
 No build step, external fonts or analytics. School enquiry forms are demonstrations only and do not send or retain data. Review feedback uses a published Google Form linked to a project response Sheet, without sign-in or email collection. Page, section and viewport are prefilled. Comments are not GitHub issues. No source documents or personal records are included.
 
+Parent view: use the toolbar toggle or `&view=parent`. It retains page order, layout and navigation while hiding editorial notes and feedback controls. Campus copy is updated in `parent-view.js`; unknown facts stay explicitly unconfirmed. Parent preview forms are disabled. Switch back to review to see source notes, content requests and feedback tools. Image spaces remain neutral until approved photography is supplied.
+
 Content loads from `pages.js`, then discovery corrections in `source-updates.js`, then the latest copy in `editorial-refinement.js`. Layout is in `app.js`; hero and feedback interactions are in `review-enhancements.js`. All pages are review proposals. The page inventory is not a contractual scope expansion.

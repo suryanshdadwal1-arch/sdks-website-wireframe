@@ -1,0 +1,10 @@
+.parent-view .source-note,.parent-view .section-number,.parent-view .section-note,.parent-view .notes-launch,.parent-view .video-slot{display:none!important}
+.parent-view .prototype-strip{font-size:11px;letter-spacing:.04em}
+.parent-view .media{background:#efefeb;border:0;color:#686862;min-height:220px}
+.parent-view .media span{font-family:Georgia,serif;font-size:22px;letter-spacing:0}
+.parent-view .media small{font-size:11px;letter-spacing:.08em}
+.parent-view .logo-box{font-size:12px;letter-spacing:.03em}
+.parent-view h1,.parent-view h2{letter-spacing:-.025em}
+.parent-preview .inputs-link,.parent-preview #note-toggle{display:none}
+#view-toggle[aria-pressed=true]{background:#222;color:white}
+@media(max-width:700px){.review-bar{flex-wrap:wrap}.review-actions{flex-wrap:wrap}}
