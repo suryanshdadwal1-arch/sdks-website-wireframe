@@ -7,4 +7,10 @@
 .parent-view h1,.parent-view h2{letter-spacing:-.025em}
 .parent-preview .inputs-link,.parent-preview #note-toggle{display:none}
 #view-toggle[aria-pressed=true]{background:#222;color:white}
+.parent-view:not(.homepage) .hero .media{display:none}
+.parent-view:not(.homepage) .hero .split{grid-template-columns:1fr}
+.parent-view:not(.homepage) .hero{padding:36px 0}
+.parent-view:not(.homepage) .hero h1{font-size:48px;max-width:900px}
+.parent-view:not(.homepage) .hero .lead{max-width:780px}
+@media(max-width:600px){.parent-view:not(.homepage) .hero h1{font-size:34px}.parent-view:not(.homepage) .hero{padding:26px 0}}
 @media(max-width:700px){.review-bar{flex-wrap:wrap}.review-actions{flex-wrap:wrap}}
