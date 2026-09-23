@@ -37,7 +37,7 @@ const schoolNavigation=[
     "Careers"
   ]
 ];
-const pageAliases={"early-years":"learning","primary":"learning","fees":"admissions","gallery":"campus","updates":"home","chairman-message":"about"};
+const pageAliases={"early-years":"learning","primary":"learning","fees":"admissions","gallery":"campus","updates":"home","chairman-message":"chairperson-message","teacher-message":"principal-message"};
 const pages={
   "home": {
     "title": "Home",
@@ -135,19 +135,19 @@ const pages={
       },
       {
         "type": "cards",
-        "title": "Messages from Our Educators",
+        "title": "Messages from Our Leadership",
         "items": [
-          [
-            "Teacher’s Message",
-            "A message from the teaching team.",
-            "teacher-message",
-            "Read the teacher’s message"
-          ],
           [
             "Principal’s Message",
             "A message from the principal.",
             "principal-message",
             "Read the principal’s message"
+          ],
+          [
+            "Chairperson’s Message",
+            "A message from the chairperson.",
+            "chairperson-message",
+            "Read the chairperson’s message"
           ]
         ]
       },
@@ -646,13 +646,13 @@ const pages={
       }
     ]
   },
-  "teacher-message": {
-    "title": "Teacher’s Message",
+  "principal-message": {
+    "title": "Principal’s Message",
     "group": "About",
-    "intro": "Teacher’s Message",
+    "intro": "Principal’s Message",
     "desc": "The school-approved message will be available here once supplied.",
     "image": null,
-    "note": "School to supply the named educator’s approved message, designation and portrait. No personal statement has been invented.",
+    "note": "School to supply the named school leader’s approved message, designation and portrait. No personal statement has been invented.",
     "sections": [
       {
         "type": "cta",
@@ -662,13 +662,13 @@ const pages={
       }
     ]
   },
-  "principal-message": {
-    "title": "Principal’s Message",
+  "chairperson-message": {
+    "title": "Chairperson’s Message",
     "group": "About",
-    "intro": "Principal’s Message",
+    "intro": "Chairperson’s Message",
     "desc": "The school-approved message will be available here once supplied.",
     "image": null,
-    "note": "School to supply the named educator’s approved message, designation and portrait. No personal statement has been invented.",
+    "note": "School to supply the named school leader’s approved message, designation and portrait. No personal statement has been invented.",
     "sections": [
       {
         "type": "cta",
