@@ -1,4 +1,4 @@
-/* Current presentation content. Infrastructure consolidation, 23 September 2026. */
+/* Current presentation content. Infrastructure consolidation. */
 const schoolNavigation=[
   [
     "about",
@@ -287,15 +287,8 @@ const pages={
         "note": "Phasing and availability of these facilities are not confirmed for opening."
       },
       {
-        "type": "prose",
-        "id": "sports",
-        "title": "Sports",
-        "text": "The proposed sports programme includes individual and team activities. Availability, age groups and supervision arrangements will be confirmed before participation begins.",
-        "note": "Principal: Sports. Age suitability, coaching, launch readiness and facilities must be confirmed."
-      },
-      {
         "type": "cards",
-        "title": "Proposed Sports",
+        "title": "Sports",
         "items": [
           [
             "Athletics",
@@ -322,7 +315,9 @@ const pages={
             "Age suitability and supervision to be confirmed."
           ]
         ],
-        "note": "Principal draft: 400m track; discovery measurement conflicts. Discovery also lists hockey/cricket ground, two outdoor and one indoor basketball court, three indoor badminton courts, and four to five table-tennis tables. Confirm specifications and launch readiness."
+        "note": "Principal: Sports. Age suitability, coaching, launch readiness and facilities must be confirmed. Principal draft: 400m track; discovery measurement conflicts. Discovery also lists hockey/cricket ground, two outdoor and one indoor basketball court, three indoor badminton courts, and four to five table-tennis tables. Confirm specifications and launch readiness.",
+        "id": "sports",
+        "text": "The proposed sports programme includes individual and team activities. Availability, age groups and supervision arrangements will be confirmed before participation begins."
       },
       {
         "type": "prose",
@@ -330,14 +325,8 @@ const pages={
         "text": "Yoga and meditation are included in the planned approach to wellbeing. Age-specific sessions are yet to be confirmed."
       },
       {
-        "type": "prose",
-        "id": "activities",
-        "title": "Activities",
-        "text": "The school’s plans give children opportunities to participate and express themselves alongside classroom learning."
-      },
-      {
         "type": "list",
-        "title": "Activities at SDKS",
+        "title": "Activities",
         "items": [
           [
             "House System",
@@ -351,18 +340,14 @@ const pages={
             "Cultural Activities & Festivals",
             "Cultural activities and festivals are included in the school’s plans."
           ]
-        ]
-      },
-      {
-        "type": "prose",
-        "id": "school-life",
-        "title": "Life @SDKS-SSA",
-        "text": "How children feel, relate to others and participate matters alongside what they learn. This is the everyday school experience SDKS aims to create.",
-        "note": "Principal: Activities and Life @SDKS-SSA. Proposed experiences, not evidence of existing enrolment."
+        ],
+        "id": "activities",
+        "text": "The school’s plans give children opportunities to participate and express themselves alongside classroom learning.",
+        "note": ""
       },
       {
         "type": "cards",
-        "title": "Everyday School Life",
+        "title": "Life @SDKS-SSA",
         "items": [
           [
             "Kindergarten",
@@ -383,7 +368,9 @@ const pages={
             "Our aim is for children to experience care and belonging in how they listen, share and work with others."
           ]
         ],
-        "note": "The four themes follow the principal draft. These are intentions for a new school, not evidence of an existing school routine. Timings and settling-in arrangements need school input."
+        "note": "Principal: Activities and Life @SDKS-SSA. Proposed experiences, not evidence of existing enrolment. The four themes follow the principal draft. These are intentions for a new school, not evidence of an existing school routine. Timings and settling-in arrangements need school input.",
+        "id": "school-life",
+        "text": "How children feel, relate to others and participate matters alongside what they learn. This is the everyday school experience SDKS aims to create."
       },
       {
         "type": "faq",
