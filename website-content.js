@@ -1,4 +1,4 @@
-/* Single presentation content source. Consolidated 22 September 2026. */
+/* Current presentation content. Infrastructure consolidation, 23 September 2026. */
 const schoolNavigation=[
   [
     "about",
@@ -13,18 +13,6 @@ const schoolNavigation=[
     "Infrastructure"
   ],
   [
-    "sports",
-    "Sports"
-  ],
-  [
-    "activities",
-    "Activities"
-  ],
-  [
-    "school-life",
-    "Life @SDKS-SSA"
-  ],
-  [
     "admissions",
     "Admission"
   ],
@@ -37,7 +25,7 @@ const schoolNavigation=[
     "Careers"
   ]
 ];
-const pageAliases={"early-years":"learning","primary":"learning","fees":"admissions","gallery":"campus","updates":"home","chairman-message":"chairperson-message","teacher-message":"principal-message"};
+const pageAliases={"early-years":"learning","primary":"learning","fees":"admissions","gallery":"campus","updates":"home","chairman-message":"chairperson-message","teacher-message":"principal-message","sports":"campus","activities":"campus","school-life":"campus"};
 const pages={
   "home": {
     "title": "Home",
@@ -78,19 +66,19 @@ const pages={
           [
             "Sports",
             "Explore the proposed sports programme.",
-            "sports",
+            "campus#sports",
             "Sports at SDKS"
           ],
           [
             "Activities",
             "Discover opportunities to participate.",
-            "activities",
+            "campus#activities",
             "Explore activities"
           ],
           [
             "Life @SDKS-SSA",
             "Understand the everyday experience we aim to create.",
-            "school-life",
+            "campus#school-life",
             "Explore school life"
           ]
         ]
@@ -211,10 +199,43 @@ const pages={
     "title": "Infrastructure",
     "group": "Campus",
     "intro": "A Campus Taking Shape\nin Patiala.",
-    "desc": "Our Patiala campus is being developed for the planned April 2027 session. Here is what is planned for opening and how the campus may grow.",
+    "desc": "Explore the campus plans, sports, activities and everyday school life being developed for the planned April 2027 session.",
     "image": "Campus overview / approved architectural render",
     "note": "Completed discovery rows 17 and 19–23; named launch facilities separated from longer-term campus plans.",
     "sections": [
+      {
+        "type": "jump",
+        "title": "Explore Infrastructure",
+        "items": [
+          [
+            "Campus facilities",
+            "facilities"
+          ],
+          [
+            "Sports",
+            "sports"
+          ],
+          [
+            "Activities",
+            "activities"
+          ],
+          [
+            "Life @SDKS-SSA",
+            "school-life"
+          ],
+          [
+            "Care and access",
+            "care"
+          ]
+        ]
+      },
+      {
+        "type": "split",
+        "title": "Our Campus in Patiala",
+        "text": "The campus behind SDKS Bhawan on Rajpura Road is under construction for the planned April 2027 session.",
+        "image": "Dated campus photograph",
+        "id": "facilities"
+      },
       {
         "type": "cards",
         "title": "Spaces for Learning and School Life",
@@ -266,44 +287,12 @@ const pages={
         "note": "Phasing and availability of these facilities are not confirmed for opening."
       },
       {
-        "type": "split",
-        "title": "Our Campus in Patiala",
-        "text": "The campus behind SDKS Bhawan on Rajpura Road is under construction for the planned April 2027 session.",
-        "image": "Dated campus photograph"
+        "type": "prose",
+        "id": "sports",
+        "title": "Sports",
+        "text": "The proposed sports programme includes individual and team activities. Availability, age groups and supervision arrangements will be confirmed before participation begins.",
+        "note": "Principal: Sports. Age suitability, coaching, launch readiness and facilities must be confirmed."
       },
-      {
-        "type": "faq",
-        "title": "Care and Access",
-        "items": [
-          [
-            "Safety and supervision",
-            "Detailed supervision and safety arrangements are not yet available."
-          ],
-          [
-            "Medical care and accessibility",
-            "Infirmary staffing and accessibility arrangements are awaiting confirmation."
-          ]
-        ],
-        "note": "School to provide visitor access, pickup authorisation, emergency response, medical staffing and accessibility details."
-      },
-      {
-        "type": "cta",
-        "title": "Considering SDKS for Your Child?",
-        "link": "admissions",
-        "label": "View Admission Details",
-        "secondary": "contact",
-        "secondaryLabel": "Find the School"
-      }
-    ]
-  },
-  "sports": {
-    "title": "Sports",
-    "group": "Learning",
-    "intro": "Time to Move.\nTime to Be Still.",
-    "desc": "The proposed sports programme includes individual and team activities. Availability, age groups and supervision arrangements will be confirmed before participation begins.",
-    "image": "Sports / movement image",
-    "note": "Principal: Sports. Age suitability, coaching, launch readiness and facilities must be confirmed.",
-    "sections": [
       {
         "type": "cards",
         "title": "Proposed Sports",
@@ -336,27 +325,16 @@ const pages={
         "note": "Principal draft: 400m track; discovery measurement conflicts. Discovery also lists hockey/cricket ground, two outdoor and one indoor basketball court, three indoor badminton courts, and four to five table-tennis tables. Confirm specifications and launch readiness."
       },
       {
-        "type": "cta",
+        "type": "prose",
         "title": "Yoga and Meditation",
-        "text": "Yoga and meditation are included in the planned approach to wellbeing. Age-specific sessions are yet to be confirmed.",
-        "link": "campus",
-        "label": "See infrastructure plans"
+        "text": "Yoga and meditation are included in the planned approach to wellbeing. Age-specific sessions are yet to be confirmed."
       },
       {
-        "type": "cta",
-        "title": "More Ways to Take Part",
-        "link": "activities",
-        "label": "Explore activities"
-      }
-    ]
-  },
-  "activities": {
-    "title": "Activities",
-    "group": "Learning",
-    "intro": "Taking Part.\nGrowing Together.",
-    "desc": "The school’s plans give children opportunities to participate and express themselves alongside classroom learning.",
-    "image": "School activities photograph",
-    "sections": [
+        "type": "prose",
+        "id": "activities",
+        "title": "Activities",
+        "text": "The school’s plans give children opportunities to participate and express themselves alongside classroom learning."
+      },
       {
         "type": "list",
         "title": "Activities at SDKS",
@@ -376,24 +354,15 @@ const pages={
         ]
       },
       {
-        "type": "cta",
-        "title": "Life Skills, Assembly and Meditation",
-        "link": "school-life",
-        "label": "Explore life at SDKS-SSA"
-      }
-    ]
-  },
-  "school-life": {
-    "title": "Life @SDKS-SSA",
-    "group": "Learning",
-    "intro": "Life at SDKS",
-    "desc": "How children feel, relate to others and participate matters alongside what they learn. This is the everyday school experience SDKS aims to create.",
-    "image": "Creative / collaborative activity image",
-    "note": "Principal: Activities and Life @SDKS-SSA. Proposed experiences, not evidence of existing enrolment.",
-    "sections": [
+        "type": "prose",
+        "id": "school-life",
+        "title": "Life @SDKS-SSA",
+        "text": "How children feel, relate to others and participate matters alongside what they learn. This is the everyday school experience SDKS aims to create.",
+        "note": "Principal: Activities and Life @SDKS-SSA. Proposed experiences, not evidence of existing enrolment."
+      },
       {
         "type": "cards",
-        "title": "Life at SDKS-SSA",
+        "title": "Everyday School Life",
         "items": [
           [
             "Kindergarten",
@@ -417,10 +386,28 @@ const pages={
         "note": "The four themes follow the principal draft. These are intentions for a new school, not evidence of an existing school routine. Timings and settling-in arrangements need school input."
       },
       {
+        "type": "faq",
+        "title": "Care and Access",
+        "items": [
+          [
+            "Safety and supervision",
+            "Detailed supervision and safety arrangements are not yet available."
+          ],
+          [
+            "Medical care and accessibility",
+            "Infirmary staffing and accessibility arrangements are awaiting confirmation."
+          ]
+        ],
+        "note": "School to provide visitor access, pickup authorisation, emergency response, medical staffing and accessibility details.",
+        "id": "care"
+      },
+      {
         "type": "cta",
-        "title": "Plan Your Child’s Next Step",
+        "title": "Considering SDKS for Your Child?",
         "link": "admissions",
-        "label": "Admission information"
+        "label": "View Admission Details",
+        "secondary": "contact",
+        "secondaryLabel": "Find the School"
       }
     ]
   },

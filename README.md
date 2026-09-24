@@ -1,5 +1,15 @@
 # SDKS website wireframe
 
+## Current structure — 23 September 2026
+
+The school requested one Infrastructure page combining campus facilities, Sports, Activities and Life @SDKS-SSA. Main navigation now has About, Pedagogy, Infrastructure, Admission, Contact and Careers, plus Apply Now. There are 11 review pages including the separate Principal and Chairperson messages. On-page links and homepage cards reach the merged sections; previous standalone page URLs resolve to Infrastructure. Footer links and the three-column client Word copy match this structure.
+
+`website-content.js` is the current content source. The former override files and `../consolidate-presentation.cjs` are historical; do not regenerate the current presentation from them. The Word copy source is synchronized from the current page data into the 22 September meeting folder.
+
+## Historical implementation notes
+
+The page counts, navigation lists and generation instructions below describe earlier versions and are superseded by the current structure above.
+
 Grayscale, responsive school website prototype for layout review. Not the live school website or an approved statement of school facilities or policies.
 
 Open `index.html` through any static web server or GitHub Pages. The review frame includes page selection, desktop/tablet/mobile views and optional content-source notes. Direct pages use `?page=home&embed=1`.
