@@ -9,9 +9,9 @@ if(embedded&&parentView){
  document.querySelectorAll('main dd').forEach(el=>{if(el.textContent.includes('School input needed'))el.textContent='Details to be confirmed';});
  // The preview must never suggest that an enquiry has actually been delivered.
  document.querySelectorAll('.form-layout form').forEach(form=>{
-  form.previousElementSibling.querySelector('p').textContent='Online enquiries will be available when the school’s enquiry service opens.';
+  form.previousElementSibling.querySelector('p').textContent='Online enquiries are not open yet.';
   form.querySelectorAll('option').forEach(option=>{if(option.textContent.includes('labels to confirm'))option.textContent='Other early-years class';});
   form.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
-  form.querySelector('button').textContent='Enquiries not enabled in this preview';
+  form.querySelector('button').textContent='Enquiries not yet open';
  });
 }

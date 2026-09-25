@@ -20,7 +20,7 @@ if(embedded){
   function showSlide(i){
    hero.querySelector('video')?.pause();current=(i+slides.length)%slides.length;const s=slides[current];
    const visual=s.video&&s.src?`<video controls playsinline preload="none" poster="${esc(s.poster)}" aria-label="Campus walkthrough"><source src="${esc(s.src)}" type="video/mp4">Your browser cannot play this video.</video>`:media(s.visual);
-   hero.querySelector('.hero-slide').innerHTML=`<div class="hero-copy"><p class="eyebrow">SDKS Sri Sri Academy · Patiala</p><h1>${esc(s.title)}</h1><p class="lead">${esc(s.text)}</p>${link(s.link,s.label,'button')}</div><div class="hero-visual">${visual}${s.video&&!s.src?'<p class="video-slot">Optional campus video · File to be supplied</p>':''}</div>`;
+   hero.querySelector('.hero-slide').innerHTML=`<div class="hero-copy"><p class="eyebrow">SDKS Sri Sri Academy · Patiala</p><h1>${esc(s.title)}</h1><p class="lead">${esc(s.text)}</p>${link(s.link,s.label,'button')}</div><div class="hero-visual">${visual}${s.video&&!s.src?'<p class="video-slot">Campus video coming soon</p>':''}</div>`;
    hero.querySelector('.hero-counter').textContent=`${String(current+1).padStart(2,'0')} / 03`;
    hero.querySelectorAll('[data-slide]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.slide)===current)));
    hero.querySelector('.hero-slide a').onclick=e=>{if(parent!==window){e.preventDefault();parent.postMessage({type:'sdks-navigate',page:s.link},location.origin);}};
@@ -32,7 +32,7 @@ if(embedded){
  }
  // Google Form stores submitted comments in the linked response Sheet.
  // No GitHub account, verified email or one-response login restriction.
- document.body.insertAdjacentHTML('beforeend',`<button class="notes-launch" aria-expanded="false">Leave feedback</button><dialog class="notes-dialog" aria-labelledby="notes-title"><div class="notes-heading"><h2 id="notes-title">Leave feedback</h2><button class="notes-close" aria-label="Close feedback">×</button></div><p class="notes-context"></p><p class="notes-help">No sign-in needed. Your comment is saved to the project’s response sheet after you press Submit in the form. Please avoid personal or student information.</p><a class="feedback-open" target="_blank" rel="noopener">Open form in a new tab ↗</a><div class="feedback-embed"></div></dialog>`);
+ document.body.insertAdjacentHTML('beforeend',`<button class="notes-launch" aria-expanded="false">Leave feedback</button><dialog class="notes-dialog" aria-labelledby="notes-title"><div class="notes-heading"><h2 id="notes-title">Leave feedback</h2><button class="notes-close" aria-label="Close feedback">×</button></div><p class="notes-context"></p><p class="notes-help">Share your suggestions for this page. No sign-in needed. Do not include personal or student details.</p><a class="feedback-open" target="_blank" rel="noopener">Open form in a new tab ↗</a><div class="feedback-embed"></div></dialog>`);
  const dialog=document.querySelector('.notes-dialog');let returnFocus=null;
  function openNotes(section){
   returnFocus=document.activeElement;
