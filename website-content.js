@@ -406,6 +406,7 @@ const pages={
     "image": null,
     "note": "Completed discovery rows 10, 11 and 26 supply session, classes and opening date. Final admission steps and eligibility remain to be supplied.",
     "sections": [
+      {"type":"jump","title":"Admission Enquiries and FAQs","items":[["Enquiry form","enquiry"],["Admission FAQs","faqs"]]},
       {
         "type": "notice",
         "title": "Admissions scheduled to open 1 December 2026",
@@ -414,7 +415,8 @@ const pages={
       },
       {
         "type": "faq",
-        "title": "Before You Apply",
+        "title": "Admission FAQs",
+        "id": "faqs",
         "items": [
           [
             "Entry classes and eligibility",

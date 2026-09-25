@@ -45,6 +45,9 @@ if(embedded){
   dialog.querySelector('.feedback-embed').innerHTML=`<iframe title="Feedback form — ${esc(section)}" src="${esc(url.href)}"></iframe>`;
   dialog.showModal();
  }
+ if(window.parent!==window)document.querySelector('.notes-launch').hidden=true;
+ else document.querySelector('.site-header').append(document.querySelector('.notes-launch'));
+ window.addEventListener('message',e=>{if(e.origin===location.origin&&e.source===parent&&e.data?.type==='sdks-feedback'){document.body.classList.add('review-notes-on');openNotes('Whole page');}});
  dialog.querySelector('.notes-close').onclick=()=>dialog.close();dialog.addEventListener('close',()=>returnFocus?.focus());
  document.querySelector('.notes-launch').onclick=function(){document.body.classList.add('review-notes-on');this.setAttribute('aria-expanded','true');openNotes('Whole page');};
  document.querySelectorAll('main > section').forEach((s,i)=>{const title=s.querySelector('h2')?.textContent||'Hero slideshow';const btn=document.createElement('button');btn.className='section-note';btn.textContent='Comment on this section';btn.setAttribute('aria-label',`Comment on ${title}`);btn.onclick=()=>openNotes(`${i+1}. ${title}`);s.append(btn);});
