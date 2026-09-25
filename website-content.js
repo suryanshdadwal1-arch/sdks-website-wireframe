@@ -448,7 +448,8 @@ const pages={
       },
       {
         "type": "form",
-        "title": "Admission Inquiry Form",
+        "title": "Admission Enquiry Form",
+        "id": "enquiry",
         "note": "Layout demonstration only. The school must confirm recipient, follow-up process and privacy handling before enquiries are enabled."
       }
     ]
@@ -470,8 +471,8 @@ const pages={
         "type": "cta",
         "title": "Have an admission question?",
         "text": "The admission page brings together the school’s dates, requirements, fees and enquiry route.",
-        "link": "admissions",
-        "label": "View admission information"
+        "link": "admissions#enquiry",
+        "label": "Ask About Admissions"
       }
     ]
   },
